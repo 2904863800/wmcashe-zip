@@ -1,6 +1,6 @@
 {
     "name": "@wmcashe/zip",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "description": "多文件压缩",
     "main": "build/src/index.js",
     "types": "build/src/index.d.ts",
@@ -31,6 +31,7 @@
         "@wmcashe/devkits": "^1.0.5"
     },
     "files": [
-        "build/src"
+        "build/src",
+        "!build/src/tsconfig.tsbuildinfo"
     ]
 }
