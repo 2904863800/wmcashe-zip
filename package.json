@@ -1,0 +1,36 @@
+{
+    "name": "@wmcashe/zip",
+    "version": "0.0.1",
+    "description": "多文件压缩",
+    "main": "build/src/index.js",
+    "types": "build/src/index.d.ts",
+    "scripts": {
+        "compiler": "compiler.bat",
+        "lsts": "node ./scripts/updateTsconfig.js",
+        "tsc": "tsc",
+        "dev": "tsc --build -w",
+        "clear": "node ./scripts/removeBuild.js",
+        "build": "tsc --build",
+        "rebuild": "npm run clear && npm run build && npm run compiler"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/2904863800/wmcashe-zip.git"
+    },
+    "keywords": [
+        "zip"
+    ],
+    "author": "wmcashe",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/2904863800/wmcashe-zip/issues"
+    },
+    "homepage": "https://github.com/2904863800/wmcashe-zip#readme",
+    "devDependencies": {
+        "@types/node": "^16.11.26",
+        "@wmcashe/devkits": "^1.0.5"
+    },
+    "files": [
+        "build/src"
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "files": [],
+    "include": [],
+    "exclude": ["build"],
+    "references": [{ "path": "./src" }, { "path": "./test" }]
+}
