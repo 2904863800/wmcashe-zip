@@ -1,6 +1,6 @@
 {
     "name": "@wmcashe/zip",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "多文件压缩",
     "main": "build/src/index.js",
     "types": "build/src/index.d.ts",
@@ -11,7 +11,8 @@
         "dev": "tsc --build -w",
         "clear": "node ./scripts/removeBuild.js",
         "build": "tsc --build",
-        "rebuild": "npm run clear && npm run build && npm run compiler"
+        "rebuild": "npm run clear && npm run build && npm run compiler",
+        "publ": "npm publish --access public"
     },
     "repository": {
         "type": "git",
