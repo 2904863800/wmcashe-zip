@@ -9,6 +9,10 @@ export class MyZip {
             const suffix = platform === "win32" ? ".exe" : "";
             const ziperPath = path.join(__dirname, `bin/myzip${suffix}`);
 
+            if (platform === "linux") {
+                childProcess.execSync(`chmod 777 ${ziperPath}`);
+            }
+
             let cmd = `${ziperPath} -files ${files.join(",")} -output ${output}`;
 
             if (isCompress) {

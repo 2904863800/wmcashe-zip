@@ -1,6 +1,6 @@
 {
     "name": "@wmcashe/zip",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "多文件压缩",
     "main": "build/src/index.js",
     "types": "build/src/index.d.ts",
