@@ -1,6 +1,6 @@
 {
     "name": "@wmcashe/zip",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "多文件压缩",
     "main": "build/src/index.js",
     "types": "build/src/index.d.ts",
@@ -28,7 +28,7 @@
     },
     "homepage": "https://github.com/2904863800/wmcashe-zip#readme",
     "devDependencies": {
-        "@types/node": "^16.11.26",
+        "@types/node": "^22.7.8",
         "@wmcashe/devkits": "^1.0.5"
     },
     "files": [

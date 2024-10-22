@@ -77,9 +77,7 @@ func defaultMyzipOption() myzipOptions {
 }
 
 type MyzipArgv struct {
-	files      []string
-	outputName string
-	options    myzipOptions
+	options myzipOptions
 }
 
 func addFileToZip(rootPath string, file string, zipWriter *zip.Writer, isCompress bool) error {
@@ -137,9 +135,7 @@ func addFileToZip(rootPath string, file string, zipWriter *zip.Writer, isCompres
 func ZipFiles(files []string, outputName string, options ...MyzipOptions) error {
 	// 设置默认参数
 	argv := &MyzipArgv{
-		files:      files,
-		outputName: outputName,
-		options:    defaultMyzipOption(),
+		options: defaultMyzipOption(),
 	}
 	for _, option := range options {
 		option.apply(&argv.options)
